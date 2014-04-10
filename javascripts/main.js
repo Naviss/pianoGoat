@@ -1,12 +1,12 @@
 (function($){
   
-  var goat1 = new Audio('http://adstorage.jamba.net/storage/view/320/0/go/Goat.mp3');
+  var goat1 = new Audio('sound/goat1.wav');
   
   
   $(document).keydown(function(e){
     switch(e.keyCode){
       case 49:
-//          goat1.play();      
+          goat1.play();      
         break;
       case 50:
 //          goat2.play();
