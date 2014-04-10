@@ -12,6 +12,26 @@
   var goat10 = new Audio('sound/goat10.wav');
   
   $(document).keydown(function(e){
+    goat1.pause();
+    goat1.currentTime = 0;
+    goat2.pause();
+    goat2.currentTime = 0;
+    goat3.pause();
+    goat3.currentTime = 0;
+    goat4.pause();
+    goat4.currentTime = 0;
+    goat5.pause();
+    goat5.currentTime = 0;
+    goat6.pause();
+    goat6.currentTime = 0;
+    goat7.pause();
+    goat7.currentTime = 0;
+    goat8.pause();
+    goat8.currentTime = 0;
+    goat9.pause();
+    goat9.currentTime = 0;
+    goat10.pause();
+    goat10.currentTime = 0;
     switch(e.keyCode){
       case 49:
         goat1.play();   
