@@ -45,6 +45,15 @@
         break;
       default:
           goat1.play();
+          goat2.play();
+          goat3.play();
+          goat4.play();
+          goat5.play();
+          goat6.play();
+          goat7.play();
+          goat8.play();
+          goat9.play();
+          goat10.play();
         break;
     }
   });
