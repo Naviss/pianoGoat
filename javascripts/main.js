@@ -13,7 +13,7 @@
   
   $(document).keydown(function(e){
     goat1.pause();
-    goat1.currentTime = 0;
+     goat1.currentTime = 0;
     goat2.pause();
     goat2.currentTime = 0;
     goat3.pause();
@@ -148,8 +148,3 @@
   
   
 })(jQuery);
-
-
-// 48 = 0
-// 49 = 1
-// 57 = 9
