@@ -1,13 +1,13 @@
   var goat = new Array();
   goat[1] = new Audio('sound/goat1.wav');
-  goat[2] = new Audio('sound/goat2.wav');
-  goat[3] = new Audio('sound/goat3.wav');
-  goat[4] = new Audio('sound/goat4.wav');
-  goat[5] = new Audio('sound/goat5.wav');
-  goat[6] = new Audio('sound/goat6.wav');
-  goat[7] = new Audio('sound/goat7.wav');
-  goat[8] = new Audio('sound/goat8.wav');
-  goat[9] = new Audio('sound/goat9.wav');
+  goat[2] = new Audio('sound/goat2_A.wav');
+  goat[3] = new Audio('sound/goat2_B.wav');
+  goat[4] = new Audio('sound/goat2_C.wav');
+  goat[5] = new Audio('sound/goat2_D.wav');
+  goat[6] = new Audio('sound/goat2_E.wav');
+  goat[7] = new Audio('sound/goat2_F.wav');
+  goat[8] = new Audio('sound/goat2_G.wav');
+  goat[9] = new Audio('sound/goat2.wav');
   goat[10] = new Audio('sound/goat10.wav');
   
   var key = new Array();
@@ -40,8 +40,13 @@
 
 function playGoatNumber(i){
    goat[i].play();
+    if(i != 10){
    document.getElementById("goat"+i).src = "images/comicGoatclose.png";
-   document.getElementById("key"+i).src = "images/key1Pressed.png";
+   document.getElementById("key"+i).src = "images/key"+i+"Pressed.png";
+    } else {
+      document.getElementById("goat10").src = "images/comicGoatclose.png";
+      document.getElementById("key0").src = "images/key0Pressed.png";
+    }
 }
 
 function playAllGoat(){
@@ -53,8 +58,13 @@ function playAllGoat(){
 function stopGoatNumber(i){
   goat[i].pause();
   goat[i].currentTime = 0;
-  document.getElementById("goat"+i).src = "images/comicGoat.png";
-  document.getElementById("key"+i).src = "images/key6.png";
+  if(i != 10){
+    document.getElementById("goat"+i).src = "images/comicGoat.png";
+    document.getElementById("key"+i).src = "images/key"+i+".png";
+  } else {
+    document.getElementById("goat10").src = "images/comicGoat.png";
+    document.getElementById("key0").src = "images/key0.png";
+  }
 }
 
 function stopAllGoat(){
