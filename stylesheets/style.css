@@ -15,3 +15,8 @@ body{
     padding-left: 37px;
     padding-top: 15px;
 }
+
+.invers-color{
+  background-color: #101010;
+  color: #fff;
+}
